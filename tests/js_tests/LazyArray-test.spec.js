@@ -1,3 +1,5 @@
+var LazyArray = require('./../../js/LazyArray').LazyArray;
+
 describe("LazyArray",
 function () {
     var la;
@@ -8,7 +10,7 @@ function () {
                                length: 12,
                                chunkSize: 5
                            });
-               });
+    });
 
     it("should have length 12", function() {
         expect(la.length).toEqual(12);

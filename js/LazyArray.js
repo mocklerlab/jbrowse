@@ -125,3 +125,7 @@ LazyArray.prototype._processChunk = function(start, end, chunk,
         callback(i + firstIndex, this.chunks[chunk][i], param);
     }
 };
+
+
+if( exports && typeof window === 'undefined')
+    exports.LazyArray = LazyArray;
